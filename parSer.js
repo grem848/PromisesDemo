@@ -22,6 +22,7 @@ async function parallel(count) {
  const allEntries = await Promise.all(swappiPeople);
  console.log(allEntries.map(p=>p.value.joke).join("\n")); 
  }
+ 
 //Time each of the two strategies
 serial(2);
 //parallel(15);
