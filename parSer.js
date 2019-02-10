@@ -9,7 +9,7 @@ async function serial(count) {
      await fetch("http://api.icndb.com/jokes/random")
        .then(res => { return res.json() }));
  }
- console.log(swappiPeople.map(p=>p.value.joke).join(", "));
+ console.log(swappiPeople.map(p=>p.value.joke).join("\n"));
 }
 async function parallel(count) {
  const swappiPeople = [];
